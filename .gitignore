@@ -1,3 +1,11 @@
 config/secrets.yml
 tmp/
 vendor/
+
+app/assets/javascripts/angular_frontend/logs/*
+app/assets/javascripts/angular_frontend/!.gitkeep
+app/assets/javascripts/angular_frontend/bower_components
+app/assets/javascripts/angular_frontend/tmp
+app/assets/javascripts/angular_frontend/.DS_Store
+app/assets/javascripts/angular_frontend/.idea
+app/assets/javascripts/angular_frontend/node_modules
