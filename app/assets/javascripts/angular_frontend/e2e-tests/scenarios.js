@@ -10,33 +10,29 @@ describe('my app', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
 
-
-  describe('view1', function() {
+  describe('spaces/index', function() {
 
     beforeEach(function() {
       browser.get('index.html#/view1');
     });
 
-
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+    it('should render spaces/index partial when user navigates to /spaces', function() {
+      expect(element.all(by.css('[ng-view]')).getText()).
+        toMatch(/(No spaces yet!|House)/);
     });
 
   });
 
-
-  describe('view2', function() {
+  describe('spaces/new', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/spaces/new');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
-    });
+    it('should render spaces/new partial when user navigates to /spaces/new', function() {
+      expect(element.all(by.css('[ng-view]')).getText()).
+        toMatch(/Add Space/);
 
-  });
+    });
 });
