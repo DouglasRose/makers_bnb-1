@@ -24,18 +24,17 @@ class SpacesController < ApplicationController
   # POST /spaces
   # POST /spaces.json
   def create
-    puts "Space params from frontend: #{space_params}"
-    # @space = Space.new(space_params)
+    @space = Space.new(space_params)
 
-    # respond_to do |format|
-    #   if @space.save
-    #     format.html { redirect_to @space, notice: 'Space was successfully created.' }
-    #     format.json { render :show, status: :created, location: @space }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @space.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    respond_to do |format|
+      if @space.save
+        format.html { redirect_to @space, notice: 'Space was successfully created.' }
+        format.json { render :show, status: :created, location: @space }
+      else
+        format.html { render :new }
+        format.json { render json: @space.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   # PATCH/PUT /spaces/1
@@ -70,6 +69,6 @@ class SpacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def space_params
-      params.require(:data).permit(:name)
+      params.require(:space).permit(:name)
     end
 end
