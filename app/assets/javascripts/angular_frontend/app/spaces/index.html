@@ -1,6 +1,9 @@
-<p>Hello, Fareed!</p>
+<p ng-if="spaces.length == 0">No spaces yet!</p>
+
 <ul>
-  <li ng-repeat="space in spaces">
+  <li ng-if="spaces" ng-repeat="space in spaces">
     #{{ space.id }}: {{ space.name }}
   </li>
 </ul>
+
+<button ng-click="addSpace()" ng-controller="">Add A Space</button>
