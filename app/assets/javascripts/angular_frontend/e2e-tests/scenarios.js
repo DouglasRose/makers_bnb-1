@@ -2,21 +2,19 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-describe('makersBnb', function() {
+describe('my app', function() {
 
 
-  it('should automatically redirect to /spaces/index when location hash/fragment is empty', function() {
+  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/spaces/index");
+    expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
-
 
   describe('spaces/index', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/spaces');
+      browser.get('index.html#/view1');
     });
-
 
     it('should render spaces/index partial when user navigates to /spaces', function() {
       expect(element.all(by.css('[ng-view]')).getText()).
@@ -24,7 +22,6 @@ describe('makersBnb', function() {
     });
 
   });
-
 
   describe('spaces/new', function() {
 
@@ -36,7 +33,6 @@ describe('makersBnb', function() {
     it('should render spaces/new partial when user navigates to /spaces/new', function() {
       expect(element.all(by.css('[ng-view]')).getText()).
         toMatch(/Add Space/);
-    });
 
-  });
+    });
 });
