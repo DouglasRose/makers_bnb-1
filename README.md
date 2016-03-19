@@ -1,6 +1,6 @@
 #MakersBnB Redux
 
-######A (Makers Academy)[http://www.makersacademy.com'] project (Week 9)
+######A [Makers Academy](http://www.makersacademy.com') project (Week 9)
 
 ####Authors
 - Alain Lemaire ([jaxdid](https://github.com/jaxdid))
