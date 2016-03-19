@@ -40,6 +40,7 @@ group :development, :test do
   gem "capybara"
   gem "database_cleaner"
   gem "selenium-webdriver"
+  gem 'rack-cors', require: 'rack/cors'
 end
 
 group :development do

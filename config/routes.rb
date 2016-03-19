@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :spaces
-  match '*any' => 'application#options', :via => [:options]
+  # match '*any' => 'application#options', :via => [:options]
 end

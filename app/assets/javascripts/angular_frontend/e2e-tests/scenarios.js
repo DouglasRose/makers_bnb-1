@@ -11,14 +11,14 @@ describe('makersBnb', function() {
   });
 
 
-  describe('spaces', function() {
+  describe('spaces/index', function() {
 
     beforeEach(function() {
       browser.get('index.html#/spaces');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render spaces/index partial when user navigates to /spaces', function() {
       expect(element.all(by.css('[ng-view]')).getText()).
         toMatch(/(No spaces yet!|House)/);
     });
@@ -26,17 +26,17 @@ describe('makersBnb', function() {
   });
 
 
-  // describe('view2', function() {
+  describe('spaces/new', function() {
 
-  //   beforeEach(function() {
-  //     browser.get('index.html#/view2');
-  //   });
+    beforeEach(function() {
+      browser.get('index.html#/spaces/new');
+    });
 
 
-  //   it('should render view2 when user navigates to /view2', function() {
-  //     expect(element.all(by.css('[ng-view] p')).first().getText()).
-  //       toMatch(/partial for view 2/);
-  //   });
+    it('should render spaces/new partial when user navigates to /spaces/new', function() {
+      expect(element.all(by.css('[ng-view]')).getText()).
+        toMatch(/Add Space/);
+    });
 
-  // });
+  });
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('makersBnb.index', ['ngRoute'])
+angular.module('makersBnb.new', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/spaces/new', {
@@ -10,15 +10,14 @@ angular.module('makersBnb.index', ['ngRoute'])
 }])
 
 .controller('AddSpaceCtrl', ['$scope', '$http', function($scope, $http) {
-  console.log("Space name from form input: " + $scope.name);
-  this.addSpace = function() {
-    console.log("addSpace function called!");
+  $scope.addSpace = function() {
     $http({
     url: 'http://localhost:3000/spaces',
     dataType: 'json',
     method: 'POST',
     data: {
-        name: $scope.name
+        name: $scope.name,
+        price: $scope.price
     },
     headers: {
         "Content-Type": "application/json"
@@ -29,5 +28,6 @@ angular.module('makersBnb.index', ['ngRoute'])
     }).error(function(error){
         // do something
     });
+    console.log("Name coming from form input: " + $scope.name);
   };
 }]);
