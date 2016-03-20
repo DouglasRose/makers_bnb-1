@@ -35,3 +35,13 @@ As a signed-in user,
 So that I can price my property,
 I want to be able to add a price per night to my space.
 ```
+```
+As a signed-in user,
+So that I can identify my property,
+I want to be able to name my space.
+```
+```
+As a signed-in user,
+So that I can describe my property,
+I want to be able to add a description to my space.
+```
