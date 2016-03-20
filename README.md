@@ -30,3 +30,9 @@ As a signed-in user,
 So that I can advertise my property,
 I want to be able to create a new space.
 ```
+```
+As a signed-in user,
+So that I can price my property,
+I want to be able to add a price per night to my space.
+```
+:construction:
