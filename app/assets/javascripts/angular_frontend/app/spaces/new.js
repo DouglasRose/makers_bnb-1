@@ -9,7 +9,7 @@ angular.module('makersBnb.new', ['ngRoute'])
   });
 }])
 
-.controller('AddSpaceCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('AddSpaceCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $scope.addSpace = function() {
     $http({
     url: 'http://localhost:3000/spaces',
@@ -17,17 +17,17 @@ angular.module('makersBnb.new', ['ngRoute'])
     method: 'POST',
     data: {
         name: $scope.name,
-        price: $scope.price
+        price: $scope.price,
+        description: $scope.description
     },
     headers: {
         "Content-Type": "application/json"
     }
-
     }).success(function(response){
         // do something
     }).error(function(error){
         // do something
     });
-    console.log("Name coming from form input: " + $scope.name);
+    $location.path("/spaces/index");
   };
 }]);
