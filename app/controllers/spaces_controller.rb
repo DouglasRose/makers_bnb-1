@@ -25,17 +25,8 @@ class SpacesController < ApplicationController
   # POST /spaces.json
   def create
     @space = Space.create(space_params)
-    # respond_to do |format|
-    #   if @space.save
-    #     format.html { redirect_to @space, notice: 'Space was successfully created.' }
-    #     format.json { render :show, status: :created, location: @space }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @space.errors, status: :unprocessable_entity }
-    #   end
-    # end
   end
-
+  
   # PATCH/PUT /spaces/1
   # PATCH/PUT /spaces/1.json
   def update

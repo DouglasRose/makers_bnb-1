@@ -53,5 +53,14 @@ describe('my app', function() {
       var list = element.all(by.css('.spaces-list'));
       expect(list.getText()).toMatch("four big rooms");
     });
+
+    it('should accept a price', function() {
+      var priceInput = element(by.model('price'));
+      priceInput.sendKeys(50);
+      element(by.css('#submit')).click();
+      expect(browser.getLocationAbsUrl()).toMatch("/spaces/index");
+      var list = element.all(by.css('.spaces-list'));
+      expect(list.getText()).toMatch('50');
+    });
   });
 });
