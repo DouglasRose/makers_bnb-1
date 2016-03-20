@@ -35,4 +35,3 @@ As a signed-in user,
 So that I can price my property,
 I want to be able to add a price per night to my space.
 ```
-:construction:
