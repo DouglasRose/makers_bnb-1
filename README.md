@@ -1,6 +1,6 @@
-#MakersBnB Redux
+#MakersBnB Reborn
 
-######A [Makers Academy](http://www.makersacademy.com') project (Week 9)
+#####A [Makers Academy](http://www.makersacademy.com') project (Week 9)
 
 ####Authors
 - [Alain Lemaire](https://github.com/jaxdid)
@@ -19,15 +19,15 @@ An AirBnB clone that allows all users to view and filter a list of rental proper
 - Run `rails s` from the project root to launch the backend server (http://localhost:3000).
 - Run `npm start` from `app/assets/javascripts/angular_frontend` to launch the frontend server (http://localhost:8000).
 
-######Testing
+#####Testing
 - Run `rspec` from the project root to run the backend test suite.
 - Run `npm run protractor` from `app/assets/javascripts/angular_frontend` to run the end-to-end (e2e) test suite.
 
 ##Technologies
-######Frontend
+#####Frontend
 - AngularJS
 
-######Backend
+#####Backend
 - Ruby on Rails 4
 - Node.js + npm
 - PostgreSQL
