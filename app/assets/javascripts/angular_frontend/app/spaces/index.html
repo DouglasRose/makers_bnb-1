@@ -1,10 +1,18 @@
-<p ng-if="spaces.length == 0">No spaces yet!</p>
-<a href="#/spaces/new">Add Space</a>
-<div ng-if="spaces.length">
-	<h1>Spaces</h1>
-	<ul>
-	  <li class="spaces-list" ng-repeat="space in spaces">
-	    #{{ space.id }}: {{ space.name }} | {{ space.price }} | {{ space.description }}
-	  </li>
-	</ul>
-</div>
+<main>
+  <h1 class="template-title">Spaces</h1>
+  <a href="#/spaces/new" class="btn-link">Add Space</a>
+  <section ng-if="spaces.length">
+  	<ul id="spaces">
+  	  <li class="individual-space" ng-repeat="space in spaces">
+  	    <ul>
+          <li class="space-name">{{ space.name }}</li>
+          <li class="space-price">&pound;{{ space.price }} &sol; night</li>
+          <li class="space-desc">{{ space.description }}</li>
+        </ul>
+  	  </li>
+  	</ul>
+  </section>
+  <section ng-if="!spaces.length">
+    <h4>No spaces yet...</h4>  
+  </section>
+</main>

@@ -1,8 +1,15 @@
-<form ng-submit="addSpace()">
-  <label for="name">Name</label>
-  <input type="text" id="22" ng-model="name" placeholder="Enter a space">
-  <input type="number" id="price" ng-model="price" placeholder="Enter a price">
-  <input type="textarea" id="description" ng-model="description" placeholder="Enter a description">
-  <button id="submit" type="submit">Add Space</button>
+<form id="add-space-form" ng-submit="addSpace()">
+  <label>
+    Name
+    <input type="text" id="name" ng-model="name" placeholder="Enter a name" />
+  </label>
+  <label>
+    Price per Night
+    <input type="number" id="price" ng-model="price" placeholder="&pound;" />
+  </label>
+  <label>
+    Description
+    <textarea id="description" ng-model="description" rows="4" cols="50" style="resize: none;" placeholder="Enter a description"></textarea>
+  </label>
+  <button type="submit" id="submit" class="btn">Add Space</button>
 </form>
-<!-- action="http://localhost:3000/spaces" method="POST"> -->

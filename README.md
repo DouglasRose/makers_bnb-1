@@ -3,15 +3,25 @@
 ######A [Makers Academy](http://www.makersacademy.com') project (Week 9)
 
 ####Authors
-- Alain Lemaire ([jaxdid](https://github.com/jaxdid))
-- Barry Grubb ([barrygrubb](https://github.com/barrygrubb))
-- Douglas Rose ([DouglasRose](https://github.com/DouglasRose))
-- Fareed Patel ([fareedpatel](https://github.com/fareedpatel))
+- [Alain Lemaire](https://github.com/jaxdid)
+- [Barry Grubb](https://github.com/barrygrubb)
+- [Douglas Rose](https://github.com/DouglasRose)
+- [Fareed Patel](https://github.com/fareedpatel)
 
 ##Description
 An AirBnB clone that allows all users to view and filter a list of rental properties and sign up to access more features. Signed-in users can add and update their property listings, book other users' properties and manage incoming booking requests.
 
 ##Instructions
+- Run `git clone https://github.com/DouglasRose/makers_bnb-1` to create a local copy of this project.
+- Run `bundle install` to install backend dependencies.
+- Generate or copy a standard Rails 4 `config/secrets.yml` file.
+- Run `rake db:create` followed by `rake db:migrate` and `rake db:migrate RAILS_ENV=test` to set up development and test databases.
+- Run `rails s` from the project root to launch the backend server (http://localhost:3000).
+- Run `npm start` from `app/assets/javascripts/angular_frontend` to launch the frontend server (http://localhost:8000).
+
+######Testing
+- Run `rspec` from the project root to run the backend test suite.
+- Run `npm run protractor` from `app/assets/javascripts/angular_frontend` to run the end-to-end (e2e) test suite.
 
 ##Technologies
 ######Frontend
@@ -23,6 +33,10 @@ An AirBnB clone that allows all users to view and filter a list of rental proper
 - PostgreSQL
 
 ##Known Issues
+- Spaces are not linked to a User model.
+- Adding a new space has basic frontend validation, but no backend validation.
+- Unused backend resources (e.g., scaffolded routes). 
+- Incomplete test coverage.
 
 ##Implemented User Stories
 ```

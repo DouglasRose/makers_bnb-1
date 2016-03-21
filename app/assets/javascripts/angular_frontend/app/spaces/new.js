@@ -12,22 +12,19 @@ angular.module('makersBnb.new', ['ngRoute'])
 .controller('AddSpaceCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $scope.addSpace = function() {
     $http({
-    url: 'http://localhost:3000/spaces',
-    dataType: 'json',
-    method: 'POST',
-    data: {
+      url: 'http://localhost:3000/spaces',
+      dataType: 'json',
+      method: 'POST',
+      data: {
         name: $scope.name,
         price: $scope.price,
         description: $scope.description
-    },
-    headers: {
+      },
+      headers: {
         "Content-Type": "application/json"
-    }
-    }).success(function(response){
-        // do something
-    }).error(function(error){
-        // do something
+      }
     });
+    
     $location.path("/spaces/index");
   };
 }]);

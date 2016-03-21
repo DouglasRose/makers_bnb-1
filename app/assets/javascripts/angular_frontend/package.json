@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "MakersBnB Reborn",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "An AirBnB clone using AngularJS + Rails 4",
+  "repository": "https://github.com/DouglasRose/makers_bnb-1",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
