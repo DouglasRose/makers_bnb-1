@@ -1,6 +1,6 @@
 config/secrets.yml
 tmp/
-vendor/
+log/
 
 app/assets/javascripts/angular_frontend/logs/*
 app/assets/javascripts/angular_frontend/!.gitkeep
