@@ -27,7 +27,7 @@ describe('my app', function() {
         toMatch(/Add Space/);
     });
 
-    it('should accept a name', function() {
+    it('should accept a name, price and description', function() {
       var nameInput = element(by.model('name'));
       nameInput.sendKeys('barryshouse');
       var descriptionInput = element(by.model('description'));

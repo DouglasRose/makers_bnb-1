@@ -26,5 +26,6 @@ angular.module('makersBnb.new', ['ngRoute'])
     });
     
     $location.path("/spaces/index");
+    $route.reload();
   };
 }]);

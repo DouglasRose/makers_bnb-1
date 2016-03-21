@@ -1,7 +1,7 @@
 <main>
   <h1 class="template-title">Spaces</h1>
   <a href="#/spaces/new" class="btn-link">Add Space</a>
-  <section ng-if="spaces.length">
+  <section ng-if="spaces.length" ng-cloak>
   	<ul id="spaces">
   	  <li class="individual-space" ng-repeat="space in spaces">
   	    <ul>
@@ -13,6 +13,6 @@
   	</ul>
   </section>
   <section ng-if="!spaces.length">
-    <h4>No spaces yet...</h4>  
+    <h2>No spaces yet...</h2>  
   </section>
 </main>
