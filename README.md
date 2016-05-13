@@ -14,7 +14,6 @@ An AirBnB clone that allows all users to view and filter a list of rental proper
 ##Instructions
 - Run `git clone https://github.com/DouglasRose/makers_bnb-1` to create a local copy of this project.
 - Run `bundle install` to install backend dependencies.
-- Generate or copy a standard Rails 4 `config/secrets.yml` file.
 - Run `rake db:create` followed by `rake db:migrate` and `rake db:migrate RAILS_ENV=test` to set up development and test databases.
 - Run `rails s` from the project root to launch the backend server (http://localhost:3000).
 - Run `npm start` from `app/assets/javascripts/angular_frontend` to launch the frontend server (http://localhost:8000).
